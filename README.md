@@ -1,4 +1,4 @@
 # Projeto-Angular
 
-Projeto desenvolvido por Lucas de Jesus Silva.
-Para empresa evo Systems.
+Projeto desenvolvido por Lucas de Jesus e Jardel Junior.
+Pi-4
