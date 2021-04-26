@@ -1,0 +1,70 @@
+<h1>Departamentos</h1>
+
+<!-- Alterar e Adicionar Departamentos
+
+    Formulario para alteração de Departamentos -->
+
+<div *ngIf="departamentoSelecionado">
+    <form [formGroup]="departamentoForm" (submit)="enviar()">
+        <div class="campo">
+          <label>Id</label>
+          <input type="number" id="id" formControlName="id"  disabled="true">
+        </div>
+      
+        <div class="nome">
+          <label>Nome</label>
+          <input type="text" id="Nome" formControlName="nome" required>
+        </div>
+      
+        <div>
+          <label class="sigla">Sigla</label>
+          <input type="text" id="sigla" formControlName="sigla" required>
+        </div>
+        
+        <div>
+            <div class="campo" >
+              <button type="submit" class=" btn btn-primary" >Salvar</button>
+              <button class=" btn btn-danger"(click)="voltar()">Cancelar</button>
+          </div>
+          </div>
+        
+        </form>   
+
+
+</div>
+
+<!-- Listar Departamentos
+
+    Formulario para Lista de Departamentos -->
+
+<div *ngIf = "!departamentoSelecionado">
+  <div class="adicionar">
+  <button class=" btn btn-success" (click)="addDepartamento()">Novo Departamento</button>
+</div>
+
+<table class="table table-striped">
+    <tbody>
+        <tr>
+           <th>#</th>
+           <th>Nome</th>
+           <th>Sigla</th>
+           <th>Opções</th>
+        </tr>
+    </tbody>
+
+    <tbody>
+    <tr *ngFor="let departamento of departamentos" routerLink="/funcionarios">
+        <td>{{departamento.id}}</td>
+        <td>{{departamento.nome}}</td>
+        <td>{{departamento.sigla}}</td>
+        <td><div class="btn-group" >
+            <button class=" btn btn-primary" (click)="departamentoSelect(departamento)">Alterar</button>
+            <button class=" btn btn-danger" (click)="deletar(departamento.id)">Deletar</button>
+        </div>
+        </td>  
+    </tr>
+        
+    </tbody>
+
+  </table>
+</div>

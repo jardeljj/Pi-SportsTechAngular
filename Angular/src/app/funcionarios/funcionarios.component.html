@@ -1,0 +1,90 @@
+<h1>Funcionarios</h1>
+
+<!-- Alterar e Adicionar Funcionarios
+
+    Formulario para alteração de funcionarios -->
+
+    <div *ngIf = "funcionarioSelecionado">
+      <form [formGroup]="funcionarioForm" (submit)="enviar()" >
+        <div class="campo">
+          <label>Id</label>
+          <input type="number" id="Id" formControlName="id"  disabled="true">
+        </div>
+      
+        <div class="nome">
+          <label>Nome</label>
+          <input type="text" id="Nome" formControlName="nome" required>
+        </div>
+      
+        <div>
+          <label class="RG">RG</label>
+          <input type="text" id="RG" formControlName="rg" required>
+        </div>
+
+        <div>
+          <label class="departamento">Departamento</label>
+          <input type="text" id="DepartamentoId" formControlName="departamentoId" required>
+        </div>
+
+        <!-- <figure class="campo">
+          <Label>Foto</Label>
+          <img  [src]="imgUrl" class="img">
+          <input type="file" (change)="PreviewImagem($event.target.files)">
+        </figure> -->
+      
+        <div>
+          <div class="campo" >
+            <button type="submit" class=" btn btn-primary">Salvar</button>
+            <button class=" btn btn-danger" (click)="voltar()">Cancelar</button>
+
+        </div>
+        </div>
+      
+      </form>         
+    </div>
+
+    <!-- Listar Funcionarios
+
+    Formulario para Lista de funcionarios -->
+
+<div *ngIf="!funcionarioSelecionado">
+
+<div class="adicionar">
+  <button class=" btn btn-success" (click)="addFuncionario()">Novo Funcionario</button>
+</div>
+
+  <table class="table table-striped">
+    <tbody>
+        <tr>
+           <th scope="row">#</th>
+           <th scope="row">Nome</th>
+           <th scope="row">Departamento</th>
+           <!-- <th scope="row">Foto</th> -->
+           <th scope="row">RG</th>
+           <th scope="row">Opções</th>
+
+        </tr>
+    </tbody>
+
+    <tbody>
+    <tr *ngFor="let funcionario of funcionarios" style="cursor: pointer; " >
+        <td>{{funcionario.id}}</td>
+        <td>{{funcionario.nome}}</td>
+        <td>{{funcionario.departamentoId}}</td>
+       <!--<td>{{funcionario.foto}}</td>-->
+        <td>{{funcionario.rg}}</td>
+        <td>
+            <button class=" btn btn-primary" (click)="funcionarioSelect(funcionario)">Alterar</button>
+            <!--Botão de Deletar Funcionario-->
+            <button class=" btn btn-danger" (click)="deletar(funcionario.id)">Deletar</button>
+        </td>  
+    </tr>
+
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
