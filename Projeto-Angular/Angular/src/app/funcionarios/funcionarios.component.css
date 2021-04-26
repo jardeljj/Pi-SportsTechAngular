@@ -1,0 +1,79 @@
+/*
+CS do formulario de cadastro
+*/
+
+input{
+  margin-left: 10px;
+}
+
+.campo{
+  margin-top: 2%;
+  margin-left: 40%;
+}
+.departamento{
+  margin-top: 2%;
+  margin-left: 33.5%;
+
+}
+.RG{
+  margin-top: 2%;
+  margin-left: 39.5%;
+
+}
+
+.nome{
+  margin-top: 2%;
+  margin-left: 38%;
+}
+
+/*
+  Css da Tabela
+*/
+
+.adicionar{
+  margin-left: 85%;
+}
+
+.table{
+    text-align: center;
+    width: 90%;
+    margin: 1cm;
+    margin-left: 2cm;
+    border-collapse: collapse;
+  
+  }
+  
+  td{
+
+    
+    border: 1px  thin ;
+    height: 80px;
+
+  
+  }
+  
+  th{
+    color: white;
+    background-color: black;
+  }
+
+  
+  h1{
+    margin-top: 1%;
+    margin-left: 40%;
+  
+  }
+
+  button{
+  margin-top: 5%;
+  }
+  /*
+    Imagem css
+  */
+
+  .img{
+    width: 20%;
+    margin-left: 10px;
+  }
+
+  

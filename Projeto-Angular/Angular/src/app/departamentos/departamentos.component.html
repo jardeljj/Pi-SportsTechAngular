@@ -1,0 +1,104 @@
+<h1>Produtos</h1>
+
+<!-- Alterar e Adicionar Departamentos
+  
+  Formulario para alteração de Departamentos -->
+  
+  <div *ngIf="departamentoSelecionado">
+    <form [formGroup]="departamentoForm" (submit)="enviar()">
+      <div class="campo">
+        <label>Codigo</label>
+        <input type="number" id="id" formControlName="id"  disabled="true">
+      </div>
+      
+      <div class="nome">
+        <label>Nome</label>
+        <input type="text" id="Nome" formControlName="nome" required>
+      </div>
+      
+      <div>
+        <label class="sigla">Marca</label>
+        <input type="text" id="marca" formControlName="marca" required>
+      </div>
+      
+      <div>
+        <label class="nome">Tamanho</label>
+        <input type="text" id="tamanho" formControlName="tamanho" required>
+      </div>
+      
+      <div>
+        <label class="nome">Cor</label>
+        <input type="text" id="cor" formControlName="cor" required>
+      </div>
+      
+      <div>
+        <label class="nome">Preço</label>
+        <input type="text" id="preco" formControlName="preco" required>
+      </div>
+      <div>
+        <label class="nome">status</label>
+        <input type="text" id="status" formControlName="status" required>
+      </div>
+      
+      <div>
+        <label class="nome">Qtd de Produto</label>
+        <input type="text" id="qtd" formControlName="qtd" required>
+      </div>
+      
+      <div>
+        <div class="campo" >
+          <button type="submit" class=" btn btn-primary" >Salvar</button>
+          <button class=" btn btn-danger"(click)="voltar()">Cancelar</button>
+        </div>
+      </div>
+      
+    </form>   
+    
+    
+  </div>
+  
+  <!-- Listar Departamentos
+    
+    Formulario para Lista de Departamentos -->
+    
+    <div *ngIf = "!departamentoSelecionado">
+      <div class="adicionar">
+        <button class=" btn btn-outline-secondary" (click)="addDepartamento()"><i class="fas fa-plus"></i>Novo Produto</button>
+      </div>
+      
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th>#</th>
+          <th>Nome do produto</th>
+          <th>Preço</th>
+          <th>Estoque</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let departamento of departamentos" style="cursor: pointer; " >
+          <td>
+
+          <button class=" btn btn-warning" (click)="departamentoSelect(departamento)">Detalhes</button>
+          </td>
+          <td>{{departamento.id}}</td>
+          <td>{{departamento.nome}}</td>
+          <td>{{departamento.preco}}</td>
+          <td>{{departamento.qtd}}</td>
+          <td>{{departamento.status}}</td>
+
+          <td>
+            <button class=" btn btn-primary" (click)="departamentoSelect(departamento)">Alterar</button>
+            <!--Botão de Deletar Funcionario-->
+            <button class=" btn btn-danger" (click)="deletar(departamento.id)">Ativar/Inativar</button>
+          </td>  
+
+          
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
