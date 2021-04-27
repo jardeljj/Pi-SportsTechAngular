@@ -12,6 +12,7 @@ export class Departamento{
     this.cor = '';
     this.preco = 0;
     this.qtd = 0;
+    this.status = '';
     }
 
     public id: number;
@@ -21,5 +22,5 @@ export class Departamento{
     public cor: string;
     public preco: number;
     public qtd: number;
-
+    public status: string;
 }

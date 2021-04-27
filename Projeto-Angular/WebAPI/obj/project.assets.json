@@ -5690,11 +5690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kinha\\Downloads\\DesenvolvimentoWeb\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\kinha\\Downloads\\Pi-4\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\kinha\\Downloads\\DesenvolvimentoWeb\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\kinha\\Downloads\\Pi-4\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\kinha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kinha\\Downloads\\DesenvolvimentoWeb\\Projeto-Angular\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\kinha\\Downloads\\Pi-4\\Projeto-Angular\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kinha\\AppData\\Roaming\\NuGet\\NuGet.Config",

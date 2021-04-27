@@ -29,7 +29,7 @@ export class DepartamentosComponent implements OnInit {
   carregarDados(){
     this.departamentoService.Getter().subscribe(
       (departamentos: Departamento[]) => {
-       // this.departamentos = departamentos;
+        this.departamentos = departamentos;
       },
       (erro:any) => {
         console.error(erro);
@@ -43,11 +43,12 @@ export class DepartamentosComponent implements OnInit {
     this.departamentoForm = this.fb.group({
       id:[''],
       nome:[''],
-      Marca:[''],
-      Tamanho:[''],
-      Cor:[''],
-      Preço:[''],
-      Qtd:[''],
+      marca:[''],
+      tamanho:[''],
+      cor:[''],
+      preco:[''],
+      qtd:[''],
+      status:[''],
     });
   }
 

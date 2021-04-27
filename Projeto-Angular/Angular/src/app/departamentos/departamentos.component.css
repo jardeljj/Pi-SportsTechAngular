@@ -1,3 +1,4 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
 /*
 CS do formulario de cadastro
 */
@@ -47,7 +48,6 @@ input{
   
   th{
     color: white;
-    background-color: black;
   }
 
   

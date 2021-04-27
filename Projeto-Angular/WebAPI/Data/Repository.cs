@@ -34,12 +34,6 @@ public class Repository : IRepository
         {
             IQueryable<Departamento> query = _context.Departamento;
 
-            if (includeFuncionario)
-            {
-                query = query.Include(pe => pe.Funcionarios);
-
-            }
-
             query = query.AsNoTracking()
                          .OrderBy(c => c.id);
 
@@ -51,12 +45,6 @@ public class Repository : IRepository
         {
             IQueryable<Departamento> query = _context.Departamento;
 
-            if (includeFuncionario)
-            {
-                query = query.Include(a => a.Funcionarios);
-
-            }
-
             query = query.AsNoTracking()
                          .OrderBy(departamento => departamento.id)
                          .Where(departamento => departamento.id == departamentoId);
@@ -65,38 +53,7 @@ public class Repository : IRepository
         }
 
 
-        public async Task<Funcionario[]> GetAllFuncionariosAsync(bool includeDepartamento = false)
-        {
-            IQueryable<Funcionario> query = _context.Funcionario;
 
-            if (includeDepartamento)
-            {
-                query = query.Include(pe => pe.Departamento);
 
-            }
-
-            query = query.AsNoTracking()
-                         .OrderBy(c => c.id);
-
-            return await query.ToArrayAsync();
-        }
-
-    
-            public async Task<Funcionario> GetFuncionarioAsyncById(int funcionarioId, bool includeDepartamento)
-        {
-            IQueryable<Funcionario> query = _context.Funcionario;
-
-            if (includeDepartamento)
-            {
-                query = query.Include(a => a.Departamento);
-
-            }
-
-            query = query.AsNoTracking()
-                         .OrderBy(funcionario => funcionario.id)
-                         .Where(funcionario => funcionario.id == funcionarioId);
-
-            return await query.FirstOrDefaultAsync();
-        }
     }
 }

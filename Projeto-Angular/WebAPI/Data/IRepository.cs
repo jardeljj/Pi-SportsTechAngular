@@ -14,8 +14,5 @@ public interface IRepository
         Task<Departamento[]> GetAllDepartamentosAsync(bool includeFuncionario);        
         Task<Departamento> GetDepartamentoAsyncById(int departamentoid, bool includeFuncionario);
         
-        //Funcionario
-        Task<Funcionario[]> GetAllFuncionariosAsync(bool includeDepartamento);
-        Task<Funcionario> GetFuncionarioAsyncById(int funcionarioid, bool includeDepartamentos);
     }
 }

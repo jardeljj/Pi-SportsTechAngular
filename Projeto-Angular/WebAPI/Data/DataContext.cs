@@ -10,8 +10,7 @@ public class DataContext : DbContext
 	{
 
 	 public DataContext(DbContextOptions<DataContext> options) : base (options) { }        
-        public DbSet<Funcionario> Funcionario { get; set; }
-        public DbSet<Departamento> Departamento { get; set; }
+             public DbSet<Departamento> Departamento { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -23,20 +22,10 @@ public class DataContext : DbContext
 
             builder.Entity<Departamento>()
                 .HasData(new List<Departamento>(){
-                    new Departamento(1, "Administrativo","SP"),
-                    new Departamento(2, "Financeiro","SP"),
-                    new Departamento(3, "Recursos Humanos","SP"),
-                    new Departamento(4, "Departamento Comercial","SP"),
+                    new Departamento(1, "Chuteira","Nike","35","azul",199.99,35,"ativo"),
+
                 });
-            
-            builder.Entity<Funcionario>()
-                .HasData(new List<Funcionario>{
-                    new Funcionario(1, "Marcos","Enviar","11554454x",3),
-                    new Funcionario(2, "João","Enviar","81584454x",2),
-                    new Funcionario(3, "Clara","Enviar","31759454x",1),
-                    new Funcionario(4, "Matheus","Enviar","51534454x",4),
-                    new Funcionario(5, "Maria","Enviar","11254464x",3)
-                });
+
 		}
 	}
 

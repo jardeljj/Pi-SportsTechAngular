@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eb5ZL1blk/sdDd80d/uJukvVaewBoq6MiJ1ZpOgC9ODiit6c2+d4lUGwg6lCKtIaMX6ZPhel2+zfX1p0+jxxLQ==",
+  "dgSpecHash": "tKbzgdEsa5+fPQW0nlgdLY9lJHZo8d4lNNzC/Ga9qXa4sjqjUdD19nNF+aMV93NGokgl9UxtQnXwXYLR5RLfFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kinha\\Downloads\\DesenvolvimentoWeb\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\kinha\\Downloads\\Pi-4\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kinha\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kinha\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.5\\microsoft.aspnetcore.jsonpatch.5.0.5.nupkg.sha512",

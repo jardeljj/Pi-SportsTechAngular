@@ -9,16 +9,36 @@ public class Departamento{
 
     public string nome { get; set; }
 
-    public string sigla { get; set; }
+    public string marca { get; set; }
 
-	public IEnumerable<Funcionario> Funcionarios { get; set; }
+	public string tamanho { get; set; }
+
+	public string cor { get; set; }
+
+	public double preco { get; set; }
+
+    public int qtd { get; set; }
+
+
+    public string status { get; set; }
+
+
+
+	
 
 	public Departamento(){ }
 
-	public Departamento(int id, string nome, string sigla){
-		this.id = id;
-		this.nome = nome;
-		this.sigla = sigla;
-		}
-}
+        public Departamento(int id, string nome, string marca, string tamanho, string cor, double preco, int qtd, string status)
+        {
+            this.id = id;
+            this.nome = nome;
+            this.marca = marca;
+            this.tamanho = tamanho;
+            this.cor = cor;
+            this.preco = preco;
+            this.qtd = qtd;
+            this.status = status;
+     
+        }
+    }
 }
