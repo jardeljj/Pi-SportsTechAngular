@@ -9,6 +9,7 @@ import { DepartamentosComponent } from './departamentos/departamentos.component'
 import { FuncionariosComponent } from './funcionarios/funcionarios.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NAVComponent } from './nav/nav.component';
+import { DetalhesComponent } from './detalhes/detalhes.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NAVComponent } from './nav/nav.component';
     DepartamentosComponent,
     FuncionariosComponent,
     NAVComponent,
+    DetalhesComponent,
     
   ],
   imports: [

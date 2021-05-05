@@ -5685,19 +5685,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kinha\\.nuget\\packages\\": {}
+    "C:\\Users\\Jardel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kinha\\Downloads\\Pi-4\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Jardel\\OneDrive\\Documentos\\GitHub\\Pi-SportsTechAngular\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\kinha\\Downloads\\Pi-4\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
-      "packagesPath": "C:\\Users\\kinha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kinha\\Downloads\\Pi-4\\Projeto-Angular\\WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\Jardel\\OneDrive\\Documentos\\GitHub\\Pi-SportsTechAngular\\Projeto-Angular\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\Jardel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jardel\\OneDrive\\Documentos\\GitHub\\Pi-SportsTechAngular\\Projeto-Angular\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kinha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jardel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
